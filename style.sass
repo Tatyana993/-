@@ -1,0 +1,470 @@
+*
+	padding: 0
+	margin: 0
+
+body
+	font-family: 'Lato', sans-serif
+
+a
+	text-decoration: none
+.box
+	position: relative
+	overflow: hidden
+	
+
+.header
+	background: #222222
+	height: 75px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: relative
+.nav
+	background-color: #fff
+	padding: 16px 16px 32px 32px
+	position: absolute
+	top: 75px
+	right: 0
+	width: 232px
+	box-sizing: border-box
+	transition: right .3s
+
+#switcher:checked ~ .nav
+	right: -232px
+#switcher
+	display: none
+
+.center
+	padding-left: calc(50% - 570px)
+	padding-right: calc(50% - 570px)
+
+.header__cearch
+	margin-left: 41px
+
+.header__icons
+	&:not(:last-child)
+		margin-right: 33px
+	&_mob
+		display: none
+
+.promo
+	background: #F1E4E6
+	display: flex
+	padding-left: calc(50% - 800px)
+	padding-right: calc(50% - 800px)
+
+.promo__foto
+	width: 100%
+
+.promo__img
+	width: 50%
+
+.promo__h1
+	font-family: Lato
+	font-style: normal
+	font-weight: 900
+	font-size: 48px
+	line-height: 58px
+	color: #222222
+
+.promo__h2
+	font-style: normal
+	font-weight: 400
+	font-size: 32px
+	line-height: 38px
+	color: #222222
+
+.promo__h2_select
+	color: #F16D7F
+
+.promo__text
+	padding-top: 16%
+
+.promo__content
+	border-left: 12px solid #F16D7F
+	padding-left: 16px
+
+.sale
+	padding-top: 64px
+	padding-bottom: 96px
+
+.sale__item
+	height: 260px
+	flex-grow: 1
+	background-position: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	background-size: cover
+
+.sale__item1
+	background-image: url(img/Group36.jpg)
+
+.sale__item2
+	background-image: url(img/Group37.jpg)
+
+.sale__item3
+	background-image: url(img/Group38.jpg)
+
+.sale__top
+	display: flex
+	gap: 30px
+
+.sale__bottom
+	height: 180px
+	background-image: url(img/Group39.jpg)
+	background-position: center
+	margin-top: 30px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	background-size: cover
+
+.sale__text
+	font-style: normal
+	font-weight: normal
+	font-size: 16px
+	line-height: 19px
+	text-align: center
+	color: #FFFFFF
+
+.sale__heading
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	line-height: 29px
+	text-align: center
+	color: #F16D7F
+
+.fetured__heading
+	font-style: normal
+	font-weight: normal
+	font-size: 30px
+	line-height: 36px
+	color: #222222
+	text-align: center
+
+.fetured__text
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 17px
+	color: #9F9F9F
+	text-align: center
+	margin-top: 6px
+
+.card__collection
+	height: 581px
+	display: flex
+	flex-direction: column
+	width: 360px
+	position: relative
+
+.card__collection:hover .collection__add
+	
+	display: flex
+
+.collection
+	display: flex
+	justify-content: center
+	gap: 30px
+	flex-wrap: wrap
+	margin-top: 48px
+	&_product
+		margin-bottom: 128px
+
+.card__chop
+	align-self: center
+	width: 100%
+	transition: 1s
+	transition: transform 1s
+.card__chop:hover
+	transform: scale(1.1)
+.collection__heading
+	font-style: normal
+	font-weight: normal
+	font-size: 13px
+	line-height: 16px
+	color: #000000
+
+.collection__text
+	font-style: normal
+	font-weight: 300
+	font-size: 14px
+	line-height: 17px
+	color: #5D5D5D
+	margin-top: 12px
+	margin-bottom: 18px
+
+.price
+	font-style: normal
+	font-weight: normal
+	font-size: 16px
+	line-height: 19px
+	color: #F16D7F
+
+.collection__content
+	padding: 24px 16px 20px
+	background: #F8F8F8
+
+
+.collection__link
+	
+	display: flex
+
+.card__collection:hover .card__chop
+
+	filter: brightness(0.5)
+	
+.collection__add
+	position: absolute
+	top: 188px
+	left: 111px
+	display: none
+	justify-content: center
+	align-items: center
+	border: 1px solid #FFFFFF
+	width: 139px
+	height: 44px
+	font-size: 14px
+	line-height: 17px
+	color: #FFFFFF
+	transition: all 1s
+
+.product__cart
+	margin-right: 11px
+	
+
+.collection__add:hover
+	background-color: #fff
+	color: black
+
+.collection__add:hover .product__cart path
+	fill: black
+
+.info
+	background: #222224
+	margin-top: 95px
+	padding-block: 104px
+	display: flex
+	gap: 30px
+
+.info__heading
+	font-style: normal
+	font-weight: normal
+	font-size: 19.96px
+	line-height: 24px
+	color: #FBFBFB
+	text-align: center
+	margin-bottom: 16px
+	margin-top: 19px
+
+.info__text
+	font-style: normal
+	font-weight: 300
+	font-size: 13.972px
+	line-height: 17px
+	text-align: center
+	color: #FBFBFB
+	width: 360px
+
+.info__cart
+	text-align: center
+	
+
+.footer__top
+	background-image: url(img/photo_subscribe.jpg)
+	height: 448px
+	display: flex
+	background-repeat: no-repeat
+	background-size: cover
+
+.footer__subscribe
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 50%
+
+.footer__quote
+	text-align: center
+	margin-top: 86px
+	width: 50%
+
+.heading__subscribe
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	line-height: 167.2%
+	text-align: center
+	color: #222224
+	
+.text__subscribe
+	font-style: normal
+	font-size: 18px
+	line-height: 167.2%
+	text-align: center
+	color: #222224
+	margin-bottom: 32px
+.subscribe__form
+	display: flex
+.subscribe__content
+	text-align: center
+.quote__text
+	text-align: center
+	color: #222224
+	font-size: 20px
+	line-height: 24px
+	text-align: center
+	margin-top: 16px
+	
+	margin-top: 30px
+
+.button_top:hover
+	background: #F16D7F
+	color: #FFFFFF
+
+.input__email
+	background: #E1E1E1
+	font-size: 14px
+	line-height: 17px
+	align-items: center
+	color: #222224
+	opacity: 0.67
+	border-radius: 25px 0 0 25px
+	border: hidden
+	height: 49px
+	padding: 7px 22px 6px 22px
+
+.button__sub
+	background: #F16D7F
+	font-size: 14px
+	line-height: 17px
+	align-items: center
+	text-align: center
+	color: #FFFFFF
+	border-radius: 0 25px 25px 0
+	width: 80px
+	border: hidden
+	height: 64px
+	transition: all 1s
+
+.button__sub:hover
+	background: #E05C6E
+	
+
+.footer__bottom
+	background: #222224
+	height: 79px
+	display: flex
+	justify-content: space-between
+
+.copy__text
+	font-style: normal
+	font-weight: normal
+	font-size: 16px
+	line-height: 19px
+	color: #FBFBFB
+	margin-top: 30px
+
+.social__contact:hover .cart__contact
+	fill: #F16D7F
+	transition: all 1s
+
+.social__contact:hover .iconka__contact
+	fill: white
+	transition: all 1s
+
+.contact__svg
+	gap: 8px
+	margin-top: 24px
+
+.breadcrumbs
+	height: 148px
+	background: #F8F3F4
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	&__link
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		color: #636363
+
+	&__nav
+		display: flex
+
+	&__link:not(:last-child)::after
+		content: '/'
+		padding-left: 8px
+		padding-right: 8px
+
+	&__link:last-child
+		font-weight: bold
+		color: #F16D7F
+
+	&__heading
+		color: #F16D7F
+		font-size: 24px
+		line-height: 29px
+		font-style: normal
+		font-weight: normal
+.button
+	border: 1px solid #F16D7F
+	line-height: 48px
+	color: #F16D7F
+	display: flex
+	justify-content: center
+	align-items: center
+	&_product
+		padding-left: 23px
+		padding-right: 56px
+	&_cart
+		color: #4A4A4A
+		width: 100px
+		border: 1px solid #A4A4A4
+		align-items: center
+		font-weight: 300
+		font-size: 11px
+		line-height: 13px
+		padding: 10px 14px
+		margin-bottom: 58px
+	&_address
+		width: 234px
+		font-weight: 300
+		font-size: 14px
+		color: #000000
+		border: 1px solid #A4A4A4
+	&_top
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 48px
+		transition: all 1s
+		width: 211px
+		height: 47px
+		margin-top: 48px
+
+
+@import catalog
+@import product
+@import cart
+@import registration
+@import tablet768
+@import m375
+@import m768
+
+
+
+
+
+																																																																																																																																																																																																																																																																																																																																																																																																																																									
+
+
+
+
+
